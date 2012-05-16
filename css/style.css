@@ -42,8 +42,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #f28705; color: #fff; text-shadow: none; }
+::selection { background: #f28705; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -218,13 +218,47 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
+header h1 {
+  display: none;
+}
 
+.bg {
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
 
+#left_bg {
+  background-color: #e5effa;
+}
 
+#right_bg {
+  background-color: #3e5916;
+  left: 50%;
+}
 
+.container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: table;
+}
 
+.center {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
 
-
+#logo {
+  display: inline-block;
+  width: 390px;
+  height: 171px;
+  background: url(../img/logo.png) no-repeat center center;
+}
 
 
 
@@ -241,6 +275,16 @@ td { vertical-align: top; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (-moz-min-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2) {
+  #logo {
+    background-image: url(../img/logo@2x.png);
+    background-size: 100%;
+  }
 }
 
 
