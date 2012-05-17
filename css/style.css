@@ -254,13 +254,50 @@ header h1 {
 }
 
 #logo {
-  display: inline-block;
+/*  display: inline-block;*/
+  margin: 0 auto;
   width: 390px;
   height: 171px;
   background: url(../img/logo.png) no-repeat center center;
 }
 
+.nav {
+  margin-top: 1.6em;
+  width: 50%;
+  font-size: 2em;
+  font-family: 'Exo', sans-serif;
+}
 
+#left {
+  color: #3e5916;
+  text-align: right;
+  float: left;
+}
+
+#right {
+  color: #e5effa;
+  left: 50%;
+  text-align: left;
+  float: right;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 0.4em;
+}
+
+.nav a, .nav a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav a:hover {
+  color: #93a605;
+}
 
 
 
