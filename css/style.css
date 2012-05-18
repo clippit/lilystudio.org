@@ -218,10 +218,6 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
-header h1 {
-  display: none;
-}
-
 .bg {
   width: 50%;
   position: absolute;
@@ -229,11 +225,11 @@ header h1 {
   z-index: -1;
 }
 
-#left_bg {
+.left_bg {
   background-color: #e5effa;
 }
 
-#right_bg {
+.right_bg {
   background-color: #3e5916;
   left: 50%;
 }
@@ -253,7 +249,7 @@ header h1 {
   vertical-align: middle;
 }
 
-#logo {
+.logo {
 /*  display: inline-block;*/
   margin: 0 auto;
   width: 390px;
@@ -268,13 +264,13 @@ header h1 {
   font-family: 'Exo', sans-serif;
 }
 
-#left {
+.left {
   color: #3e5916;
   text-align: right;
   float: left;
 }
 
-#right {
+.right {
   color: #e5effa;
   left: 50%;
   text-align: left;
