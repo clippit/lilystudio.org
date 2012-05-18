@@ -226,11 +226,11 @@ td { vertical-align: top; }
 }
 
 .left_bg {
-  background-color: #e5effa;
+  background: #e5effa url("../img/left_bg.png") repeat right;
 }
 
 .right_bg {
-  background-color: #3e5916;
+  background: #3e5916 url("../img/right_bg.png") repeat left;
   left: 50%;
 }
 
