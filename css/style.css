@@ -261,7 +261,7 @@ td { vertical-align: top; }
   margin-top: 1.6em;
   width: 50%;
   font-size: 2em;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", "Hiragino Sans GB", "微软雅黑", sans-serif;
 }
 
 .left {
@@ -297,7 +297,43 @@ td { vertical-align: top; }
   color: #93a605;
 }
 
+.content-container {
+  position: relative;
+  max-height: 30em;
+  overflow: hidden;
+  background: #444 url("../img/linen_bg_tile.jpg") repeat;
+  color: #eee;
+  display: none;
+}
 
+.edge {
+  width: 100%;
+  height: 2em;
+  position: absolute;
+}
+
+.content-container .top {
+  top: -2em;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow:  0 10px 20px -2px rgba(0, 0, 0, 0.6); 
+  -moz-box-shadow:  0 10px 20px -2px rgba(0, 0, 0, 0.6); 
+  box-shadow:  0 10px 20px -2px rgba(0, 0, 0, 0.6);  
+}
+
+.content-container .bottom {
+  bottom: -2em;
+  border-top: 1px solid #ddd;
+  -webkit-box-shadow:  0 -10px 20px -2px rgba(0, 0, 0, 0.6); 
+  -moz-box-shadow:  0 -10px 20px -2px rgba(0, 0, 0, 0.6); 
+  box-shadow:  0 -10px 20px -2px rgba(0, 0, 0, 0.6);  
+}
+
+.content {
+  min-width: 18em;
+  max-width: 960px;
+  margin: 2em auto;
+  display: none;
+}
 
 
 
