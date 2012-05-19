@@ -297,7 +297,7 @@ td { vertical-align: top; }
   color: #93a605;
 }
 
-.nav .disabled, .nav .disabled:hover {
+.nav a.disabled, .nav a.disabled:hover {
   color: #888;
 }
 
