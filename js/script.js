@@ -60,8 +60,9 @@
 		$(this).fadeOut(duration, function() {
 			$(this).remove();
 		});
-		$container.animate({'height': 'hide'}, duration);
-		$("#" + activeLabelName.toLowerCase()).hide();
+		$container.animate({'height': 'hide'}, duration, function() {
+			$("#" + activeLabelName.toLowerCase()).hide();
+		});
 		$main.animate(
 			{"top": 0, "height": "-=" + logo_top_offset},
 			duration
