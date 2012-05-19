@@ -47,11 +47,25 @@
 		);
 		$("#" + target).show();
 		$container.animate({'height': 'show'}, duration);
-		overlay.animate({opacity: 0.5}, duration);
+		overlay.fadeTo(duration, 0.5);
 	});
 
 	function closeFolder() {
-		console.log(this);
+		var duration = 1200,
+			activeLabel = $(".nav-link.active"),
+			activeLabelName = activeLabel.data("en");
+
+		activeLabel.text(activeLabelName);
+		$(".nav-link").removeClass("active disabled");
+		$(this).fadeOut(duration, function() {
+			$(this).remove();
+		});
+		$container.animate({'height': 'hide'}, duration);
+		$("#" + activeLabelName.toLowerCase()).hide();
+		$main.animate(
+			{"top": 0, "height": "-=" + logo_top_offset},
+			duration
+		);
 	}
 
 
