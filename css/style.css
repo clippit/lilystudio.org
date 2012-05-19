@@ -293,8 +293,12 @@ td { vertical-align: top; }
   width: 5em;
 }
 
-.nav a:hover {
+.nav a:hover, .nav .active {
   color: #93a605;
+}
+
+.nav .disabled, .nav .disabled:hover {
+  color: #888;
 }
 
 .content-container {
@@ -314,18 +318,31 @@ td { vertical-align: top; }
 
 .content-container .top {
   top: -2em;
-  border-bottom: 1px solid #ddd;
-  -webkit-box-shadow:  0 10px 20px -2px rgba(0, 0, 0, 0.6); 
-  -moz-box-shadow:  0 10px 20px -2px rgba(0, 0, 0, 0.6); 
-  box-shadow:  0 10px 20px -2px rgba(0, 0, 0, 0.6);  
+  border-bottom: 1px solid #999;
+  -webkit-box-shadow: 0 20px 40px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 20px 40px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 40px -2px rgba(0, 0, 0, 0.6);
 }
 
 .content-container .bottom {
   bottom: -2em;
-  border-top: 1px solid #ddd;
-  -webkit-box-shadow:  0 -10px 20px -2px rgba(0, 0, 0, 0.6); 
-  -moz-box-shadow:  0 -10px 20px -2px rgba(0, 0, 0, 0.6); 
-  box-shadow:  0 -10px 20px -2px rgba(0, 0, 0, 0.6);  
+  border-top: 1px solid #444;
+  -webkit-box-shadow: 0 -20px 40px -2px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 -20px 40px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 -20px 40px -2px rgba(0, 0, 0, 0.6);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  filter:alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
 }
 
 .content {
